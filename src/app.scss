@@ -1,3 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
+}
+
 .app {
-  color: red;
+  width: 96%;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  .app {
+    width: 99%;
+  }
 }
