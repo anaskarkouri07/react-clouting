@@ -1,0 +1,23 @@
+.collections {
+  padding: 2rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+
+  &-link {
+    text-transform: uppercase;
+    &:hover {
+      color: #444;
+    }
+  }
+  & > h2 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+
+  &-items {
+    display: flex;
+    justify-content: space-between;
+  }
+}

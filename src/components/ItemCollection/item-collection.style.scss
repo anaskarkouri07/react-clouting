@@ -1,0 +1,56 @@
+.item-collection {
+  width: 100%;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &-img {
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    & > button {
+      color: #333;
+      background-color: #ccc;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 2rem;
+      width: 90%;
+      font-size: 1.3rem;
+      padding: 1rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      z-index: 1;
+    }
+
+    &:hover {
+      & > button {
+        visibility: visible;
+        opacity: 0.7;
+        &:hover {
+          cursor: pointer;
+          background-color: #333;
+          color: #fff;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
