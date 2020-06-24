@@ -1,0 +1,22 @@
+.sign-up {
+  width: 35%;
+  & > h1 {
+    margin: 1.5rem 0;
+  }
+  & > h2 {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sign-up {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .sign-up {
+    width: 100%;
+    margin: 0 1rem;
+  }
+}

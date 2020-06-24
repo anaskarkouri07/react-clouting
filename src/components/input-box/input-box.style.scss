@@ -1,0 +1,34 @@
+.input-box {
+  padding: 1.5rem 0;
+  position: relative;
+  & > input {
+    width: 100%;
+    color: #333;
+    padding: 1rem;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 1px solid #333;
+
+    & ~ label {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 2rem;
+      left: 1rem;
+      transition: all 0.5s;
+    }
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        display: none;
+      }
+    }
+    &:not(:placeholder-shown) ~ label {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+      left: 0;
+    }
+  }
+}
